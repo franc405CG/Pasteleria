@@ -1,0 +1,449 @@
+:root{
+    --color-first : #36D7b7;
+    /* background */
+    --color-second: #BFBFBF;
+    --color-third : #36D7b7;
+    --color-accent: #FBA905;
+    --color-dark  : rgb(1, 2, 2);
+    --color-border: #DFE0E0;
+    --color-text  : #53575A;
+    --color-bg    : rgba(39, 185, 211, 0.842);
+    --color-blanco: white;
+    --z-normal    : 1;
+    --z-tooltip   : 10;
+    --z-fixed     : 100;
+    --z-modal     : 1000;
+}
+ *, *::before, *::after {
+    box-sizing: border-box;
+}
+body{
+    background: var(--color-blanco);
+    color: var(--color-text);
+    font-family: "Times New Roman", Georgia, Serif;
+} 
+h1{
+    font-family: 'Abril Fatface', cursive;
+}
+h2,h3,h4,h5,h6 {
+    font-family: 'Spirax', cursive;
+} 
+hr {
+  
+        display: block;
+        unicode-bidi: isolate;
+        -webkit-margin-before: 0.5em;
+        -webkit-margin-after: 0.5em;
+        -webkit-margin-start: auto;
+        -webkit-margin-end: auto;
+        overflow: hidden;
+        border-style: inset;
+        border-width: 1px;
+        margin-left: 125px;
+        margin-right: 125px;
+        margin-top: 100px;
+    
+}
+hr .separador{
+  
+    display: block;
+    unicode-bidi: isolate;
+    -webkit-margin-before: 0.5em;
+    -webkit-margin-after: 0.5em;
+    -webkit-margin-start: auto;
+    -webkit-margin-end: auto;
+    overflow: hidden;
+    border-style: inset;
+    border-width: 1px;
+    margin-left: 125px;
+    margin-right: 125px;
+    margin-top: 100px;
+    color: rgb(255, 255, 255);
+
+}
+.main-header a{
+    font-family: 'Righteous', cursive;
+}
+.main-header .box{
+    position: fixed;
+    box-shadow: 0 8px 10px -3px rgba(0,0,0,.5);
+    background-color: var(--color-bg);
+}
+.box{
+    /* background: yellow; */
+    height: 73px; 
+    width: 100%;  
+    /* border: 3px solid black; */
+    background: yellow;
+    
+}
+.box-tex-logo{
+   float: left;
+   width: 35%;
+   margin-top: 1%;
+  
+    /* background: yellow;  */
+    
+}
+.box-tex-logo a{
+    text-decoration: none;
+    padding: 10px 16px;
+    color: var(--color-dark);
+}
+
+.logo:hover {
+    background-color: #555;
+    color: white;
+}
+.box-menu{
+    float: right;
+    width: 60%;
+    margin-top: 1%;
+    
+    /* background: red;  */
+}
+.box-tex-logo .logo{
+    margin-left: 10%;
+    font-size: 2rem;
+    /* font-family:  ; */
+}
+
+.barra {
+    float: right;
+    margin-right: 10%;
+}
+.barra ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background: rgba(39, 185, 211, 0.116);
+    overflow: hidden;
+}
+
+.barra li {
+    float: left;
+}
+
+.barra li a {
+    display: block;
+    color: var(--color-dark);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+    /* Change the link color on hover */
+.barra li a:hover {
+    background-color: #555;
+    color: white;
+}
+
+
+/* banner */
+/* .box-banner h1{
+    text-align: center;
+    margin-top: 10px;
+    color: var(--color-dark);
+    font-size: 3rem;
+} */
+/* box-nombre */
+.box-nombre{
+    float: left;
+    width: 700px;
+    height: 160px;
+    /* border: 6px solid  rgba(39, 185, 211, 0.842); */
+    border-top      : 10px solid black;
+    border-bottom   : 10px solid black;
+    margin-left     : 370px;
+    margin-top      : 340px;
+   padding: 0;
+    /* background-color:  rgba(39, 185, 211, 0.842); */
+    /* box-shadow: 0 20px 30px -9px var(--color-bg); */
+
+}
+.box-nombre h1{
+    color: rgb(10, 113, 161)  ;
+    /* font-weight : 500; */
+    text-align: center;
+    font-size: 6rem;
+    margin: 0px;
+    font-style: italic;
+    /* padding-bottom: 10px;  */
+    margin-top: 10px;
+    text-shadow: 2px 2px 2px rgb(9, 9, 9);
+
+ } 
+
+.box-banner{
+    height: 637px;
+    width: 100%;
+    background-image: url(https://images.pexels.com/photos/6679/hands-summer-party-colorful.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+    
+    box-shadow: 0 10px 30px -10px #000;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* border: 3px solid black; */
+}
+.box-banner img{
+    /* border: 10px solid black;  */
+    height: 400px;
+    width: 70%;
+    margin-top: 11%;
+    margin-left: 15%;
+    margin-right: 20%;
+    margin-bottom: 3%;
+    background: hsl(0, 0, 0);
+    box-shadow: 0 8px 10px -3px rgba(0,0,0,.8) ;
+
+}
+
+/* Servicios */
+.box-servicios-1 .servicio-1{
+    float: right;
+    height: 300px;
+    width:  350px;
+    
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    margin-right: 175px; 
+    font-size: 1rem;
+    padding-top: 120px;
+    color: black;
+    background-color: var(--color-blanco);
+  
+   
+   
+}
+
+.box-servicios-1 .img-1{
+        width: 350px;
+        height: 350px;
+        margin-left: 175px;
+        margin-top: 80px;
+        box-shadow: 0 10px 30px -10px #000;
+        border-radius: 10px;
+        background-size: cover;
+        background-repeat: no-repeat;
+}
+
+.box-servicios-2 {
+    height: 350px;
+    width:  100%;
+    /* border: 10px solid; */
+    margin-top: 90px;
+}
+.box-servicios-2 .servicio-2{
+   
+    background: var(--color-bg);
+    
+    /* padding-bottom: 10px; */
+    width: 300px;
+    height: 350px;
+    margin-left: 175px;
+    margin-top: 80px;
+
+    
+    
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    margin-right: 175px; 
+    font-size: 1rem;
+    padding-top: 180px;
+    color: black;
+    background-color: var(--color-blanco);
+  
+
+}
+
+.box-servicios-2 .img-2{
+     float: right;
+    height: 300px;
+    width:  350px;
+          box-shadow: 0 10px 30px -10px #000;
+        border-radius: 10px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin-top: 80px;
+        margin-bottom: 80px;
+        margin-right: 175px; 
+        
+}
+.box-servicios-3 {
+    height: 350px;
+    width:  100%;
+    /* border: 10px solid; */
+    margin-top: 200px;
+}
+.box-servicios-3 .servicio-3{
+    float: right;
+    height: 300px;
+    width:  350px;
+    background: var(--color-bg);
+    text-align: center;
+    /* margin-top: 80px; */
+    margin-bottom: 80px;
+    margin-right: 175px; 
+    font-size: 1rem;
+    padding-top: 120px;
+    background-color: var(--color-blanco);
+}
+
+.box-servicios-3 .img-3{
+        width: 300px;
+        height: 350px;
+        margin-left: 175px;
+        /* margin-top: 80px; */
+        box-shadow: 0 10px 30px -10px #000;
+        border-radius: 10px;
+        background-size: cover;
+        background-repeat: no-repeat;
+}
+
+/* .img-1{
+    width: 400px;
+    height: 350px;
+    margin-left: 175px;
+    margin-top: 80px;
+
+} */
+/* // */
+
+/* formulario */
+
+.Contacto{
+    width: 80%;
+    margin-left: 10%;
+     margin-top: 9%;
+}
+/* footer */
+.main-footer{
+    background-color: var(--color-bg);
+    /* margin-top: 100%; */
+    text-align: center;
+    padding: 1em;
+    font-family: 'Spirax', cursive;
+}
+.main-footer p{
+    color: var(--color-dark);
+    margin: 10px;
+}
+.main-footer a{
+    color: var(--color-dark);
+    margin: 2%;
+    text-decoration: none;
+}
+
+h2{
+    text-align: center;
+    margin-top: 40px;
+}
+
+/* diapositivas              /////////////// */
+/* Slideshow container */
+.slideshow-container {
+    background-image: url(https://scontent.fmex6-1.fna.fbcdn.net/v/t1.0-9/29595062_492044967863860_2380039652760834791_n.jpg?_nc_cat=0&_nc_eui2=v1%3AAeGirphLy_3DjPIAR669Brj5XEjnmjSjMHfJTkFKOeRyhl_ilxxAZzKMfEfW1KPq871PjwgE0qcOJ0dwBSKNb1r8lQy3wmD59w2DLFtwYHql5w&oh=8f801b97deecc86a19a4e624abaa829e&oe=5B73F6D1);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 500px;
+    height: 350px;
+    box-shadow: 0 10px 30px -10px #000;
+    border-radius: 10px;
+    margin-right: 175px;
+    position: relative;
+    margin: auto;
+    margin-top: 50px;
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+      display: none;
+  }
+  .mySlides img{
+    width: 500px;
+    height: 350px;
+    box-shadow: 0 10px 30px -10px #000;
+    border-radius: 10px;
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  /* Caption text */
+  .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
